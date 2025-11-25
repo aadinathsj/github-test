@@ -1,11 +1,36 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Sample HTML Page</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World Interactive App</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to the Sample HTML Page</h1>
+    <div class="container">
+        <h1 id="greeting">Hello World! 👋</h1>
+        <p class="subtitle">Welcome to my interactive app</p>
+        
+        <div class="counter-section">
+            <h2>Click Counter: <span id="count">0</span></h2>
+            <button id="incrementBtn" class="btn btn-primary">Click Me!</button>
+            <button id="resetBtn" class="btn btn-secondary">Reset</button>
+        </div>
+
+        <div class="color-section">
+            <h2>Background Color Changer</h2>
+            <button id="colorBtn" class="btn btn-color">Change Color</button>
+        </div>
+
+        <div class="input-section">
+            <h2>Name Greeting</h2>
+            <input type="text" id="nameInput" placeholder="Enter your name">
+            <button id="greetBtn" class="btn btn-primary">Greet Me</button>
+            <p id="personalGreeting"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
 
